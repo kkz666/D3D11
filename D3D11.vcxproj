@@ -19,9 +19,46 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\03 Rendering a Cube\HLSL\Cube.hlsli" />
     <None Include="Triangle.hlsli" />
   </ItemGroup>
   <ItemGroup>
+    <FxCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\03 Rendering a Cube\HLSL\Cube_PS.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HLSL\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HLSL\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HLSL\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">HLSL\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\03 Rendering a Cube\HLSL\Cube_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HLSL\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HLSL\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HLSL\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">HLSL\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">VS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
+    </FxCompile>
     <FxCompile Include="Triangle_PS.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PS</EntryPointName>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
@@ -60,19 +97,23 @@
     </FxCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="d3dApp.cpp" />
-    <ClCompile Include="d3dUtil.cpp" />
-    <ClCompile Include="DXTrace.cpp" />
-    <ClCompile Include="GameApp.cpp" />
-    <ClCompile Include="GameTimer.cpp" />
-    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dApp.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dUtil.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\DXTrace.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameApp.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameTimer.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Keyboard.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Main.cpp" />
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Mouse.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="d3dApp.h" />
-    <ClInclude Include="d3dUtil.h" />
-    <ClInclude Include="DXTrace.h" />
-    <ClInclude Include="GameApp.h" />
-    <ClInclude Include="GameTimer.h" />
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dApp.h" />
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dUtil.h" />
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\DXTrace.h" />
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameApp.h" />
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameTimer.h" />
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Keyboard.h" />
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Mouse.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

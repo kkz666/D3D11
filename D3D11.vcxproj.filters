@@ -24,46 +24,61 @@
     <FxCompile Include="Triangle_VS.hlsl">
       <Filter>着色器</Filter>
     </FxCompile>
+    <FxCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\03 Rendering a Cube\HLSL\Cube_PS.hlsl" />
+    <FxCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\03 Rendering a Cube\HLSL\Cube_VS.hlsl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Triangle.hlsli">
       <Filter>着色器</Filter>
     </None>
+    <None Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\03 Rendering a Cube\HLSL\Cube.hlsli" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="d3dApp.cpp">
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="d3dUtil.cpp">
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dUtil.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="DXTrace.cpp">
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\DXTrace.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="GameApp.cpp">
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="GameTimer.cpp">
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameTimer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Keyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Mouse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="d3dApp.h">
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dApp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="d3dUtil.h">
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\d3dUtil.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="DXTrace.h">
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\DXTrace.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="GameApp.h">
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameApp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="GameTimer.h">
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\GameTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Keyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\X_jun D3D\DirectX11-With-Windows-SDK-master\Project 01-09\06 Mouse and Keyboard\Mouse.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
